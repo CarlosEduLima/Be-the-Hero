@@ -1,0 +1,98 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+  }
+  
+  .modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+  }
+  
+  .modal {
+    z-index: 100;
+    background: white;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: 3px;
+    max-width: 500px;
+    padding: 10px;
+  }
+  
+  .project-info header {
+    display: inline;
+  }
+  
+  .project-info header img {
+    display: inline-block;
+    width: 54px;
+    height: 64px;
+  }
+  .project-info header h3 {
+    display: inline-block;
+    font-weight: bold;
+  }
+  .project-info .sumary {
+    margin-top: 20px;
+  }
+  
+  .project-info .sumary h4{
+    margin-bottom: 10px;
+  }
+ .stats { 
+   margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background: rgba(22, 190, 64, 0.726);
+  }
+  .card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+   .stat .type{
+    margin-bottom: 7px;
+    font-weight: bold;
+  }
+
+  .project-info .contact h4 {
+    margin-top: 10px;
+  }
+  
+  .project-info .contact a {
+    color: #8e4dff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .project-info .contact a:hover {
+    color: #5a2ea6;
+  }
+  
+  .project-info .modal-close-button {
+    display: inline;
+    position: absolute;
+    bottom: 94%;
+    left: 85%;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    cursor: pointer;
+    border: none;
+  }
+  

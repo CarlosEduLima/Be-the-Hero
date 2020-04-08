@@ -1,0 +1,134 @@
+main {
+    flex: 1;
+    margin-top: 30px;
+  }
+  
+  main ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+  }
+  
+  @media (max-width: 500px) {
+    main ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  li.card {
+    background: #FFF;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  li.card header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  li.card header img {
+ 
+  }
+  
+  .project-info strong {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  
+  .project-info img {
+    width: 11px;
+    height: 11px;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  
+  .project-info span {
+    font-size: 13px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bolder;
+  }
+  .project-info footer button{
+    display: block;
+    margin-top: 50px;
+  }
+  li.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0;
+  }
+  
+  li.card a {
+    color: #8e4dff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  li.card a:hover {
+    color: #5a2ea6;
+  }
+  
+
+  button {
+    font-size: .9rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: .3rem 1rem;
+    margin-top: 10px;
+    background-color: #999;
+    transition: 0.3s;
+  }
+  
+button:hover {background-color: #bbb;}
+  
+  .button-default {
+    background: #247BA0;
+    color: #fff;
+  }
+  .container {
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 310px;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #999;
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.7;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

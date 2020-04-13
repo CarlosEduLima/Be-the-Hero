@@ -19,9 +19,9 @@ export default function Header() {
                     </label>
                 </div>
                 <div className="nav-links">
-                        <NavLink  to='/home'><a>Home</a></NavLink >
-                        <NavLink  to='/organizations'><a>Organizations</a></NavLink>
-                        <NavLink  to='/about'>About</NavLink >
+                        <Link  to='/'>Home</Link>
+                        <Link  to='/organizations'>Organizations</Link>
+                        <Link  to='/about'>About</Link>
                 </div>
             </div>
         </React.Fragment>

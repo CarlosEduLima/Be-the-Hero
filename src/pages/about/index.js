@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-export default function About(){
+import {withRouter} from 'react-router-dom';
+function About(){
     return(
         <div className='main'>
             <div className='content'>
@@ -9,3 +10,4 @@ export default function About(){
         </div>
     )
 }
+export default withRouter(About);

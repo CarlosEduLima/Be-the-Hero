@@ -7,10 +7,14 @@ import About from './pages/about';
 export default function Routes() {
   return (
     <Router>
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/Organization" component={Organization} />
-      <Route path="/About" component={About} />
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/organizations">
+          <Organization />
+        </Route>
+        <Route path="/about" component={About} />
       </Switch>
     </Router>
   );
